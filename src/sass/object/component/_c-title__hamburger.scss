@@ -1,0 +1,47 @@
+@use "global" as *;
+
+.c-title__hamburger {
+    text-align: center;
+    font-family: $title-font;
+    text-transform: uppercase;
+    font-size: rem(18);
+    // color: $yellow;
+    // text-shadow: 0 4px 4px rgba($white, 0.12);
+    // background: linear-gradient(to bottom, $yellow, $black);
+    // -webkit-text-stroke: 0.025em transparent;
+    // -webkit-background-clip: text;
+    // position: relative;
+    line-height: 36 / 49;
+    @include mq ('md') {
+        text-align: left;
+        font-size: rem(24);
+    }
+}
+
+.c-title__hamburger:hover {
+    color: $yellow;
+    text-shadow: 0 4px 4px rgba($white, 0.12);
+    background: linear-gradient(to bottom, $yellow, $black);
+    -webkit-text-stroke: 0.025em transparent;
+    -webkit-background-clip: text;
+    position: relative;
+}
+
+.c-title__hamburger:hover::after {
+    content: attr(deta-en);
+    position: absolute;
+    top: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    background: linear-gradient(to bottom, $yellow, $black);
+    -webkit-text-stroke: 0.045em transparent;
+    -webkit-background-clip: text;
+    color: transparent;
+    z-index: -1;
+    line-height: 36 / 49;
+    @include mq ('md') {
+        top: 0;
+        left: 0;
+        transform: translateY(0);
+    }
+}

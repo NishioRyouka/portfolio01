@@ -1,0 +1,8 @@
+@use "global" as *;
+
+.l-slide-block__item {
+    margin-top: rem(28);
+    @include mq(md) {
+        margin-top: rem(25);
+    }
+}

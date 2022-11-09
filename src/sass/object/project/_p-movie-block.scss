@@ -1,0 +1,48 @@
+@use "global" as *;
+
+.p-movie-block__youtube {
+    margin-top: rem(15);
+    position: relative;
+    width: 100%;
+    height: 0;
+    padding-top: 56.25%;
+    iframe {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+    }
+    @include mq(md) {
+        margin-top: ren(20);
+    }
+}
+
+.p-movie-block__title {
+    margin-top: rem(28);
+    span {
+        display: block;
+        text-align: center;
+        font: {
+            family: $sawarabi;
+            size: rem(14);
+            }
+        line-height: calc(21 / 14);
+        &:nth-child(3) {
+            font-size: rem(18);
+            line-height: calc(26 / 18);
+        }
+    }
+    @include mq(md) {
+        margin-top: rem(25);
+        span {
+            font-size: rem(16);
+            line-height: calc(23 / 16);
+            &:nth-child(3) {
+                font-size: rem(24);
+                line-height: calc(35 / 24);
+            }
+        }
+    }
+}
+

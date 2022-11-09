@@ -1,0 +1,36 @@
+@use "global" as *;
+
+.p-slide-block__item {
+    display: none
+}
+
+.swiper-slide-active .p-slide-block__item {
+    display: block;
+}
+.p-slide-block__date {
+    font: {
+        size: rem(14);
+        family: $sawarabi;
+    }
+    line-height: calc(20 / 14);
+    @include mq(md) {
+        line-height: calc(21 / 14);
+    }
+}
+
+.p-slide-block__title {
+    font: {
+        size: rem(36);
+        family: $sawarabi;
+    }
+    line-height: calc(53 / 36);
+    @include mq(md) {
+        line-height: calc(52 / 36);
+    }
+}
+
+.p-slide-block__btn {
+    @include mq(md) {
+        margin-top: rem(16);
+    }
+}

@@ -1,0 +1,15 @@
+@use "global" as *;
+
+.l-discography {
+    margin-top: rem(78);
+    @include mq(md) {
+        margin-top: rem(174);
+    }
+}
+
+.l-discography__swiper {
+    margin-top: rem(15);
+    @include mq(md) {
+        margin-top: rem(20);
+    }
+}

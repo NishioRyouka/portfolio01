@@ -1,0 +1,43 @@
+@use "global" as *; 
+
+.p-link {
+    ul {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        column-gap: rem(37);
+        row-gap: rem(31);
+    }
+
+    @include mq ('md'){
+        ul{
+            display: flex;
+            justify-content: space-between;
+            }
+        }
+}
+
+.p-link__footer {
+    display: none;
+    @include mq(md) {
+        display: block;
+    } 
+}
+
+.icon_image{
+    margin: 0 auto;
+}
+
+.p-link__copy {
+    margin: rem(90) 0 rem(30);
+    font: {
+        family: $sawarabi;
+        size: rem(13);
+    }
+    line-height: calc(19 / 13);
+    display: block;
+    text-align: center;
+    @include mq(md) {
+        margin: rem(84) 0 rem(51);
+
+    }
+}

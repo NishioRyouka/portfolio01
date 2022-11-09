@@ -1,0 +1,37 @@
+@use "global" as *;
+
+.c-btn {
+    display: inline-block;
+    min-width: rem(256);
+    line-height: calc(21 / 16);
+    background-color: $yellow;
+    color: $black;
+    border-radius: rem(24);
+    padding: rem(8) rem(15) rem(9);
+    font-weight: bold;
+    text-align: center;
+}
+
+.c-btn-arrow {
+    display: inline-block;
+    min-width: rem(177);
+    line-height: calc(23 / 16);
+    background-color: #BEA72D;
+    color: $black;
+    border-radius: rem(18);
+    padding: rem(4) rem(10) rem(4);
+    font-weight: bold;
+    text-align: center;
+}
+
+.c-btn__square {
+    display: inline-block;
+    min-width: rem(137);
+    line-height: calc(23 / 16);
+    background-color: $yellow;
+    color: $black;
+    border-radius: rem(8);
+    font-weight: bold;
+    padding: rem(9) rem(16);
+    text-align: center;
+}

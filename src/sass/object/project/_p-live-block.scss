@@ -1,0 +1,40 @@
+@use "global" as *;
+
+.p-live-block {
+    padding-bottom: rem(37);
+    border-bottom: 1px dashed $white;
+    @include mq(md) {
+        display: flex;
+        align-items: center;
+    }
+}
+
+.p-live-block__date {
+
+}
+
+.p-live-block__body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    span {
+        font-size: rem(12);
+        margin-left: 1px;
+        padding-right: 1em;
+    }
+    @include mq(md) {
+        margin-left: rem(7);
+    }
+}
+
+.p-live-block__title {
+    padding-right: 1em;
+
+}
+
+.p-live-block__btn {
+    margin-top: rem(38);
+    @include mq(md) {
+        margin: 0 0 0 auto;
+    }
+}

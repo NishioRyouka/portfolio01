@@ -1,0 +1,61 @@
+@use "global" as *;
+
+.p-nav {
+    width: 100%;
+    height: 100vh;
+    background-color: $black;
+}
+
+.p-nav__wrapper {
+    display: flex;
+    align-items: center;
+    height: inherit;
+}
+
+.p-nav__list {
+    width: 100%;
+    
+}
+
+.p-nav__item a {
+    text-align: center;
+    display: block;
+    padding: rem(7) 0;
+    font-family: $title-font;
+    text-transform: uppercase;
+    font-size: rem(18);
+    line-height: calc(25 / 18);
+    @include mq ('md') {
+        font-size: rem(24);
+        padding: rem(13) 0;
+        line-height: calc(33 / 24);
+    }
+}
+
+.p-nav__item a:hover {
+    color: $yellow;
+    text-shadow: 0 4px 4px rgba($white, 0.12);
+    background: linear-gradient(to bottom, $yellow, $black);
+    -webkit-text-stroke: 0.025em transparent;
+    -webkit-background-clip: text;
+    position: relative;
+}
+
+// .p-nav__item a:hover::after {
+//     content: attr(deta-en);
+//     position: absolute;
+//     top: 0;
+//     left: 50%;
+//     transform: translateX(-50%);
+//     background: linear-gradient(to bottom, $yellow, $black);
+//     -webkit-text-stroke: 0.045em transparent;
+//     -webkit-background-clip: text;
+//     color: transparent;
+//     z-index: -1;
+//     line-height: 36 / 49;
+//     @include mq ('md') {
+//         top: 0;
+//         left: 0;
+//         transform: translateY(0);
+//     }
+// }
